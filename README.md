@@ -1,3 +1,4 @@
+#Ahora usa AUTORAG con documentos en sec r2_bucket
 # LLM Chat Application Template
 
 A simple, ready-to-deploy chat application template powered by Cloudflare Workers AI. This template provides a clean starting point for building AI chat applications with streaming responses.

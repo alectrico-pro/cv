@@ -4,6 +4,16 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
+        "secrets_store_secrets" : [
+           { "binding": "AUTORAG","store_id": "8bd2531eeb4e4cd48560c6e0f45b8db4",  "secret_name": "AUTORAG_ALAMBRITO"},
+           { "binding": "MODELO", "store_id": "8bd2531eeb4e4cd48560c6e0f45b8db4",  "secret_name": "NX_MODELO_RAG" }
+        ],
+        "routes": [
+        {
+         "pattern": "cv.alectrico.cl",
+         "custom_domain": true
+        }
+        ],
 	"name": "cv",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-10-08",

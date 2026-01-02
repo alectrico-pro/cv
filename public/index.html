@@ -1,183 +1,601 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>LLM Chat App</title>
-		<style>
-			:root {
-				--primary-color: #f6821f;
-				--primary-hover: #e67e22;
-				--light-bg: #f9fafb;
-				--border-color: #e5e7eb;
-				--text-color: #1f2937;
-				--text-light: #6b7280;
-				--user-msg-bg: #fff2e6;
-				--assistant-msg-bg: #f3f4f6;
-			}
+<!DOCTYPE html>
+<html lang="es">
 
-			* {
-				box-sizing: border-box;
-				margin: 0;
-				padding: 0;
-			}
+<head>
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://alambrito.alectrico.cl/es/index.html" />
+    <link rel="alternate" href="https://alambrito.alectrico.cl/en/index.html" hreflang="en" />
+    <link rel="alternate" href="https://alambrito.alectrico.cl/es/index.html" hreflang="es" />
+    <link rel="alternate" href="https://alambrito.alectrico.cl/index.html" hreflang="x-default" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <title>Alam Brito | Inicio</title>
+    <link rel="icon" href="../assets/images/fav-icon.png">
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="stylesheet" href="../assets/css/superclasses.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="../assets/css/mobile.css">
+</head>
 
-			body {
-				font-family:
-					-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
-					Cantarell, sans-serif;
-				line-height: 1.6;
-				color: var(--text-color);
-				max-width: 800px;
-				margin: 0 auto;
-				padding: 1rem;
-			}
+<body>
+    <!-- Preloader -->
+    <div class="loader-mask">
+        <div class="loader">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- Preloader -->
+    <!-- HEADER SECTION -->
+    <header class="w-100 float-left header-con">
+        <div class="wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <a class="navbar-brand" href="index.html">
+                    <figure class="mb-0">
+                        <img src="../assets/images/logo.png" alt="logo">
+                    </figure>
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link p-0" href="../ai.html">Modo IA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="#Services">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="#About">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="contact.html">Contáctanos</a>
+                            <!-- antes era contact.html -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="#Appointment">Haga su cita hoy!</a>
+                        </li>
+                    </ul>
+                    <div class="header-contact d-flex align-items-center">
+                        <div class="phone d-flex align-items-center">
+                            <figure class="mb-0">
+                                <img src="../assets/images/headphone-icon.png" alt="headphone-icon">
+                            </figure>
+                            <div class="phone-txt">
+                                <span class="d-block">Llámanos al:</span>
+                                <a href="tel:+56(932)000-849">(932)000-849</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- HEADER SECTION -->
+    <!-- BANNER SECTION -->
+    <section class="w-100 float-left banner-con position-relative">
+        <div class="wrapper2">
+            <div class="banner-inner-box position-relative">
+                <div class="banner-inner-con">
+                    <div class="banner-title">
+                        <h1 data-aos="fade-up" data-aos-duration="700">Clinica
+                            Latina
+                            Familiar.</h1>
+                        <p data-aos="fade-up" data-aos-duration="700">ACEPTAMOS LA MAYORIA DE SEGUROS MEDICOS!!! <br>
+                            Contamos con laboratorio en el sitio.</p>
+                        <div class="banner-btn d-flex align-items-center" data-aos="fade-up" data-aos-duration="700">
+                            <a href="#Appointment">Haga su cita Hoy!</a>
+                            <a href="#Appointment">
+                                <figure class="mb-0 d-flex align-items-center justify-content-center">
+                                    <img src="../assets/images/top-arrow.png" alt="top-arrow">
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="banner-details d-flex position-relative">
+                        <figure class="mb-0">
+                            <img src="../assets/images/logo_alambrito_circular.png" alt="logo_alambrito_circular-img">
+                        </figure>
+                        <div class="banner-details-txt">
+                            <div class="banner-static-box">
+                                <ul class="mb-0 list-unstyled">
+                                    <li class="d-flex align-items-center justify-content-center" data-aos="fade-up"
+                                        data-aos-duration="700">
+                                        <figure class="mb-0 d-flex align-items-center justify-content-center">
+                                            <img src="../assets/images/thumb-icon.png" alt="thumb-icon">
+                                        </figure>
+                                        <div class="banner-static-txt">
+                                            <div class="static-value">100%</div>
+                                            <span class="d-block">Pacientes Satisfechos</span>
+                                            <span class="d-block">Garantizado!!!</span>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-end" data-aos="fade-up"
+                                        data-aos-duration="700">
+                                        <figure class="mb-0 d-flex align-items-center justify-content-center">
+                                            <img src="../assets/images/experienced-icon.png" alt="experienced-icon">
+                                        </figure>
+                                        <div class="banner-static-txt">
+                                            <div class="static-value">200+</div>
+                                            <span class="d-block">Servicios & Procedimientos Médicos</span>
+                                            <span class="d-block">Al servicio de su salud.</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--
+                        <div class="client-review d-flex align-items-center">
+                            <div class="d-flex align-items-center review-img">
+                                <figure class="mb-0">
+                                    <img src="../assets/images/review-img1.jpg" alt="review-img">
+                                </figure>
+                                <figure class="mb-0">
+                                    <img src="../assets/images/review-img2.jpg" alt="review-img">
+                                </figure>
+                                <figure class="mb-0">
+                                    <img src="../assets/images/review-img3.jpg" alt="review-img">
+                                </figure>
+                            </div>
+                            <div class="review-txt">
+                                <span>5.0</span>
+                                <figure class="mb-0 d-inline-block">
+                                    <img src="../assets/images/star-img.png" alt="star-img">
+                                </figure>
+                                <span class="d-block">Apóyanos con tu Review!</span>
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BANNER SECTION -->
+    <!-- SERVICE SECTION -->
+    <section id="Services" class="w-100 float-left service-con padding-top padding-bottom">
+        <div class="container">
+            <div class="service-box">
+                <div class="service-box-content" data-aos="fade-up" data-aos-duration="700">
+                    <span class="d-block sub-txt">Que ofrecemos</span>
+                    <h2>Medicina General de calidad</h2>
+                    <p class="mb-0">Atención primaria integral, tratamientos de enfermedades crónicas, exámenes de bienestar, vacunas y control de peso.</p>
+                </div>
+                <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
+                    <figure>
+                        <img src="../assets/images/followup-care-icon.png" alt="followup-care-icon">
+                    </figure>
+                    <h4>Seguimiento</h4>
+                    <ul><p>— Diagnóstico y tratamiento de diabetes e hipertensión.</p></ul>
+                    <ul><p>— Niveles de colesterol y glucosa.</p></ul>
+                </div>
+                <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
+                    <figure>
+                        <img src="../assets/images/minor-surgeries-icon.png" alt="minor-surgeries-icon">
+                    </figure>
+                    <h4>Cirugías menores</h4>
+                    <ul><p>— Resección de verrugas.</p></ul>
+                    <ul><p>— Suturas de heridas.</p></ul>
+                    <ul><p>— Drenaje de abscesos.</p></ul>
+                </div>
+                <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
+                    <figure>
+                        <img src="../assets/images/gynecology-icon.png" alt="gynecology-icon">
+                    </figure>
+                    <h4>Exámenes preventivos</h4>
+                    <ul><p>— Exámenes pélvicos y de Papanicolaou</p></ul>
+                    <ul><p>— Planificación familiar y métodos anticonceptivos.</p></ul>
+                </div>
+                <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
+                    <figure>
+                        <img src="../assets/images/lab-icon.png" alt="lab-icon">
+                    </figure>
+                    <h4>Pruebas de laboratorio y diagnóstico</h4>
+                    <ul><p>— Análisis de próstata en sangre.</p></ul>
+                    <ul><p>— Prueba de embarazo.</p></ul>
+                    <ul><p>— Análisis de sangre y panel metabólico.</p></ul>
+                    <ul><p>— Prueba de Tiroide.</p></ul>
+                </div>
+                <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
+                    <figure>
+                        <img src="../assets/images/weigh-control-icon.png" alt="weigh-control-icon">
+                    </figure>
+                    <h4>Pérdida de peso y sueros vitaminados</h4>
+                    <ul><p>— Programas integrales de pérdida de peso.</p></ul>
+                    <ul><p>— Shots de vitaminas para hidratar el cuerpo, combatir la fatiga, fortalecer el sistema inmunológico, mejorar la piel y muchos otros.</p></ul>
+                </div>
+                <div class="service-provide-box" data-aos="fade-up" data-aos-duration="700">
+                    <div class="service-provide-title">
+                        <h3>Hacemos exámenes de DOT/CDL.</h3>
+                        <p>Además de exámenes físicos de inmigración y escolares.</p>
+                        <div class="provide-btn d-flex align-items-center">
+                            <a href="#Appointment">Haga su cita hoy!</a>
+                            <a href="#Appointment" class="provide-arrow">
+                                <figure class="mb-0 d-flex align-items-center justify-content-center">
+                                    <img src="../assets/images/samll-arrow.png" alt="top-arrow">
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-provide-img">
+                        <figure class="mb-0">
+                            <img src="../assets/images/treatment-img.jpg" alt="treatment-img">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SERVICE SECTION -->
+    <!-- ABOUT SECTION -->
+    <section id="About" class="w-100 float-left about-con design-img padding-top padding-bottom position-relative">
+        <div class="wrapper3">
+            <div class="about-box" data-aos="fade-up" data-aos-duration="700">
+                <div class="about-box-img">
+                    <div class="vedio-img position-relative">
+                        <div class="vedio-sub-img">
+                            <img class="thumb poster-con index1-poster" src="../assets/images/about-img1.jpg"
+                                alt="vedio-img">
+                            <img class="thumb poster-con index1-poster" src="../assets/images/about-img2.jpg"
+                                alt="vedio-img">
+                            <img class="thumb poster-con index1-poster" src="../assets/images/about-img3.jpg"
+                                alt="vedio-img">
+                        </div>
+                        <div class="btn-outer">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-box-title" data-aos="fade-up" data-aos-duration="700">
+                    <span class="d-block sub-txt">Acerca de nosotros</span>
+                    <h2>Asistente Inteligente
+                        Alam Brito</h2>
+                    <p>En Clínica Mundo Latino, nos dedicamos a brindar servicios de atención primaria compasivos y accesibles para personas y familias. Nuestro equipo bilingüe se enfoca en la atención preventiva, el manejo de enfermedades crónicas, exámenes de bienestar y consultas de urgencia, garantizando una atención personalizada en un ambiente culturalmente respetuoso. Nos enorgullece servir a la comunidad latina con atención médica de calidad que prioriza su salud, confianza y conveniencia.</p>
+                    <div class="generic-list">
+                        <ul class="list-unstyled mb-0">
+                            <li>Chequeos mensuales</li>
+                            <li>Equipo médico atento</li>
+                            <li>Resultados proactivos y rápidos</li>
+                        </ul>
+                        <ul class="list-unstyled mb-0">
+                            <li>Programas de pérdida de peso</li>
+                            <li>Sueros vitaminados</li>
+                            <li>Atención médica asequible</li>
+                        </ul>
+                    </div>
+                    <div class="generic-btn">
+                        <a href="contact.html">
+                            ¡Contáctanos hoy!
+                        </a>
+                        <a href="contact.html">
+                            <figure class="mb-0">
+                                <img src="../assets/images/long-arrow.png" alt="long-arrow">
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="fade1" onClick="lightbox_close();"></div>
+    </section>
+    <!-- ABOUT SECTION -->
+    <!-- CONTACT SECTION -->
+    <section id="Appointment" class="w-100 float-left contact-con position-relative">
+        <div class="dots-img position-relative">
+            <div class="padding-top padding-bottom contact-inner-con position-relative">
+                <div class="container">
+                    <div class="contact-form" data-aos="fade-up" data-aos-duration="700">
+                        <span class="sub-txt d-block">Solicite una consulta</span>
+                        <h2>¡Haga su cita hoy!</h2>
+                        <label id="emailAlert" class="text-dark bg-warning" style="display: none; margin-bottom: 2em; font-size: 1.2em"><b>Status</b></label>
+                        <form class="form-box" method="post">
+                            <ul class="list-unstyled" data-aos="fade-up" data-aos-duration="700">
+                                <li>
+                                    <input id="name" type="text" name="fname" placeholder="Escriba su nombre:" autocomplete="name">
+                                </li>
+                                <li>
+                                    <input id="phone" type="tel" name="phone" placeholder="Teléfono:" autocomplete="phone">
+                                </li>
+                                <li>
+                                    <input id="email" type="email" placeholder="Correo:" name="email" autocomplete="email">
+                                </li>
+                                <li>
+                                    <input id="date" placeholder="Fecha:" type="text" onfocus="(this.type = 'date')">
+                                </li>
+                                <li>
+                                    <textarea id="messageText" placeholder="Mensaje:" name="subject"></textarea>
+                                </li>
+                            </ul>
+                            <div class="submit-btn" data-aos="fade-up" data-aos-duration="700">
+                                <button id="sendEmailButton" class="btn btn-secondary" type="submit" onclick="sendEmail('Appointment')" disabled >
+                                    Haga su cita
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT SECTION -->
+    <!-- PROCESS SECTION -->
+    <section class="work-process-sec w-100 float-left padding-bottom padding-top">
+        <div class="container">
+            <div class="generic-title text-center" data-aos="fade-up" data-aos-duration="700">
+                <span class="d-block sub-txt">COMO ES EL PROCESO?</span>
+                <h2 class="mb-0">Asi trabajamos...</h2>
+            </div>
+            <div class="process-con">
+                <ul class="list-unstyled mb-0">
+                    <li class="text-center" data-aos="fade-up" data-aos-duration="700">
+                        <div class="process-img-box">
+                            <figure>
+                                <img src="../assets/images/process-img1.png" alt="process-img1">
+                            </figure>
+                            <span>01</span>
+                        </div>
+                        <h4>Consulta Médica</h4>
+                        <p>Aceptamos seguros <br>
+                            y pacientes en efectivo...</p>
+                    </li>
+                    <li class="text-center" data-aos="fade-up" data-aos-duration="700">
+                        <div class="process-img-box">
+                            <figure>
+                                <img src="../assets/images/process-img2.png" alt="process-img2">
+                            </figure>
+                            <span>02</span>
+                        </div>
+                        <h4>Diagnosticamos su condición</h4>
+                        <p>Mediante una consulta <br>
+                            evaluamos su estado de salud...</p>
+                    </li>
+                    <li class="text-center" data-aos="fade-up" data-aos-duration="700">
+                        <div class="process-img-box">
+                            <figure>
+                                <img src="../assets/images/process-img3.png" alt="process-img3">
+                            </figure>
+                            <span>03</span>
+                        </div>
+                        <h4>Le aplicamos tratamiento</h4>
+                        <p>Nuestro equipo experimentado <br>
+                            le prestará el mejor servicio...</p>
+                    </li>
+                    <li class="text-center" data-aos="fade-up" data-aos-duration="700">
+                        <div class="process-img-box">
+                            <figure>
+                                <img src="../assets/images/process-img4.png" alt="process-img4">
+                            </figure>
+                            <span>04</span>
+                        </div>
+                        <h4>Documentamos sus Resultados</h4>
+                        <p>Su información será protegida <br>
+                            con los más altos estándares de seguridad...</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- PROCESS SECTION -->
+    <!-- GET IN TOUCH SECTION -->
+    <section class="get-in-touch-section w-100 float-left">
+        <div class="container">
+            <div class="contact-section" data-aos="fade-up" data-aos-duration="700">
+                <div class="doctor-img-con"></div>
+                <div class="contact-txt-con">
+                    <div class="generic-title mb-0">
+                        <span class="sub-txt d-block">CONTACTENOS HOY</span>
+                        <h2>Ofrecemos el mejor
+                            Servicio de Salud!</h2>
+                    </div>
+                    <div class="submit-btn">
+                        <a href="#Appointment">Haga su Cita Hoy</a>
+                        <a href="#Appointment">
+                            <figure class="mb-0">
+                                <img src="../assets/images/top-arrow.png" alt="top-arrow">
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- GET IN TOUCH SECTION -->
+    <!-- FOOTER SECTION -->
+    <section class="footer-main-section w-100 float-left">
+        <div class="container">
+            <div class="footer-inner-con">
+                <div class="footer-box footer-logo-box">
+                    <figure>
+                        <img src="../assets/images/footer-logo-2.png" alt="footer-logo">
+                    </figure>
+                    <p>Mundo Latino Clínica Médica es su proveedor de confianza para servicios integrales de medicina general y atención primaria.</p>
+                    <p class="mb-0">Descubra el centro médico donde su salud es nuestra prioridad.</p>
+                </div>
+                <div class="footer-box footer-pages-links">
+                    <h4>Nuestros Servicios</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-angle-right"></i><a href="#Services">Médico de Familia</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="#Services">Cirugías menores</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="#Services">Laboratorio en el sitio</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="#Services">Exámenes físicos DOT/CDL</a></li>
+                        <li><i class="fas fa-angle-right"></i><a href="#Services">Cuidados preventivos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-box contact-details-box">
+                    <h4>Contact Us</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-map-marker-alt"></i>5945 Bellaire Blvd, Ste F
+                            Houston, Texas 77081</li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:info@alectrico.cl">info@alectrico.cl</a></li>
+                        <li><i class="fas fa-phone-alt"></i><a href="tel:+18322518309">(932)000-849</a></li>
+                        <li><i class="fas fa-fax"></i><a href="tel:+568925896325">(932)000-849</a></li>
+                    </ul>
+                </div>
+                <div class="footer-box footer-newsletter">
+                    <h4>Sigue nuestras redes sociales</h4>
+                    <div class="social-links">
+                        <ul class="list-unstyled mb-0 d-flex">
+                            <li class="d-flex justify-content-center align-items-center mb-0"><a
+                                    href="https://maps.app.goo.gl/ZdipVBPRRfBkWEUm7"><i class="fab fa-google"></i></a></li>
+                            <li class="d-flex justify-content-center align-items-center mb-0"><a
+                                    href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="d-flex justify-content-center align-items-center mb-0"><a
+                                    href="https://www.linkedin.com/login"><i class="fab fa-instagram"></i></a></li>
+                            <li class="d-flex justify-content-center align-items-center mb-0"><a
+                                    href="https://www.tiktok.com/login"><i
+                                    class="fab fa-tiktok"></i></a></li>
+                            <li class="d-flex justify-content-center align-items-center mb-0"><a
+                                    href="https://www.youtube.com"><i class="fab fa-youtube"></i></a></li>
+                            <li class="d-flex justify-content-center align-items-center mb-0"><a
+                                    href="https://web.telegram.org/k/"><i class="fas fa-paper-plane"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="copyright-con w-100 float-left text-center">
+        <p class="mb-0">Copyright © 2025 Alectrico Spa. Derechos reservados.</p>
+    </div>
+    <a id="button"></a>
+    <!-- FOOTER SECTION -->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/owl.carousel.js"></script>
+    <script src="../assets/js/aos.js"></script>
+    <script src="../assets/js/jquery.validate.js"></script>
+    <script src="../assets/js/rtidy-apps.js"></script>
+    <script>
+        $(window).on('load', function(){ 
+        // Preloader
+        $('.loader').fadeOut();
+        $('.loader-mask').delay(350).fadeOut('slow');
+        });
+    </script>
+    <script>
+        var btn = $('#button');
+         
+         $(window).scroll(function() {
+           if ($(window).scrollTop() > 300) {
+           btn.addClass('show');
+         }
+          else {
+           btn.removeClass('show');
+         }
+         });
+         btn.on('click', function(e) {
+         e.preventDefault();
+         $('html, body').animate({scrollTop:0}, '300');
+       });
+    </script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        $('#owl-carouselone').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 10000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+        $('#owl-carouseltwo').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 10000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+    <script>
+        AOS.init();
+        function lightbox_open() {
+            var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+            //   window.scrollTo(0, 0);
+            //document.getElementById('light').style.display = 'block';
+            document.getElementById('fade1').style.display = 'block';
+            lightBoxVideo.play();
+        }
 
-			header {
-				text-align: center;
-				margin-bottom: 2rem;
-				padding: 1rem 0;
-				border-bottom: 1px solid var(--border-color);
-			}
+        function lightbox_close() {
+            var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+            document.getElementById('light').style.display = 'none';
+            document.getElementById('fade1').style.display = 'none';
+            lightBoxVideo.pause();
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
 
-			h1 {
-				font-size: 1.5rem;
-				color: var(--primary-color);
-			}
+            var counters = $(".count");
+            var countersQuantity = counters.length;
+            var counter = [];
 
-			.chat-container {
-				display: flex;
-				flex-direction: column;
-				height: calc(100vh - 200px);
-				min-height: 400px;
-				border: 1px solid var(--border-color);
-				border-radius: 8px;
-				overflow: hidden;
-			}
+            for (i = 0; i < countersQuantity; i++) {
+                counter[i] = parseInt(counters[i].innerHTML);
+            }
 
-			.chat-messages {
-				flex: 1;
-				overflow-y: auto;
-				padding: 1rem;
-				background-color: var(--light-bg);
-			}
+            var count = function (start, value, id) {
+                var localStart = start;
+                setInterval(function () {
+                    if (localStart < value) {
+                        localStart++;
+                        counters[id].innerHTML = localStart;
+                    }
+                }, 40);
+            }
 
-			.message {
-				margin-bottom: 1rem;
-				padding: 0.75rem;
-				border-radius: 8px;
-				max-width: 80%;
-			}
+            for (j = 0; j < countersQuantity; j++) {
+                count(0, counter[j], j);
+            }
+        });
 
-			.message p {
-				white-space: pre-line;
-				margin: 0;
-				overflow-wrap: anywhere;
-			}
 
-			.user-message {
-				background-color: var(--user-msg-bg);
-				align-self: flex-end;
-				margin-left: auto;
-			}
 
-			.assistant-message {
-				background-color: var(--assistant-msg-bg);
-				align-self: flex-start;
-			}
+        $('.count').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 3300,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    </script>
+</body>
 
-			.message-input {
-				display: flex;
-				padding: 0.75rem;
-				border-top: 1px solid var(--border-color);
-				background-color: white;
-			}
-
-			#user-input {
-				flex: 1;
-				padding: 0.75rem;
-				border: 1px solid var(--border-color);
-				border-radius: 4px;
-				font-family: inherit;
-				resize: none;
-				min-height: 44px;
-			}
-
-			#send-button {
-				margin-left: 0.5rem;
-				padding: 0 1rem;
-				background-color: var(--primary-color);
-				color: white;
-				border: none;
-				border-radius: 4px;
-				cursor: pointer;
-				transition: background-color 0.2s;
-			}
-
-			#send-button:hover {
-				background-color: var(--primary-hover);
-			}
-
-			#send-button:disabled {
-				background-color: var(--text-light);
-				cursor: not-allowed;
-			}
-
-			.typing-indicator {
-				display: none;
-				font-style: italic;
-				color: var(--text-light);
-				padding: 1rem;
-			}
-
-			.typing-indicator.visible {
-				display: block;
-			}
-
-			footer {
-				margin-top: 1rem;
-				text-align: center;
-				font-size: 0.85rem;
-				color: var(--text-light);
-			}
-		</style>
-	</head>
-	<body>
-		<header>
-			<h1>Cloudflare AI Chat</h1>
-			<p>Powered by Cloudflare Workers AI</p>
-		</header>
-
-		<div class="chat-container">
-			<div id="chat-messages" class="chat-messages">
-				<div class="message assistant-message">
-					<p>
-						Hello! I'm an LLM chat app powered by Cloudflare Workers AI. How can
-						I help you today?
-					</p>
-				</div>
-			</div>
-
-			<div class="typing-indicator" id="typing-indicator">
-				AI is thinking...
-			</div>
-
-			<div class="message-input">
-				<textarea
-					id="user-input"
-					placeholder="Type your message here..."
-					rows="1"
-					autofocus
-				></textarea>
-				<button id="send-button">Send</button>
-			</div>
-		</div>
-
-		<footer>
-			<p>Cloudflare Workers AI Chat Template &copy; 2025</p>
-		</footer>
-
-		<!-- Chat app script -->
-		<script src="chat.js"></script>
-	</body>
 </html>
